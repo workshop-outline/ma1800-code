@@ -1,0 +1,49 @@
+/* CSS Document — Exercise 2: Animated Messages */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 300px;
+  border: dashed 3px #000000;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Keyframes define how the animation moves text in from the left */
+@keyframes move {
+  0%   { top: 0%; left: -100%; }  /* start off-screen */
+  100% { top: 0%; left: 0%; }     /* slide into view */
+}
+
+.moving {
+  position: relative;          /* positions element relative to its container */
+  background: papayawhip;
+  border-radius: 15px;
+  text-align: left;
+  margin: 15px;
+  padding: 10px;
+  color: slategray;
+
+  left: -100%;                 /* ensures starting position matches keyframes */
+
+  /* Apply the animation */
+  animation: move 1s ease forwards;
+  animation-iteration-count: 1; /* only plays once */
+}
+
+/* Apply delays so each message enters in sequence */
+.message2 {
+  animation-delay: 3s;
+}
+.message3 {
+  animation-delay: 6s;
+}

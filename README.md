@@ -1,9 +1,6 @@
-# MA1800: Introduction to Digital Media Practice
-
 # MA1800 Coding Resources
 
 This repository contains completed coding workshop examples for MA1800.
-
 The workshops focus on HTML and CSS for creative and web-based artistic practice. The repository is organised by teaching week. Each week contains a simple index page linking to the completed version of each workshop.
 
 Use the link below to access the live versions of the completed weekly coding workshops:

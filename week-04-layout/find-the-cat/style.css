@@ -5,7 +5,7 @@ body {
   height: 4000px; /* Extra tall page so scrolling is possible */
   font-family: monospace; /* Matches the ASCII art style */
   font-size: 14px;
-
+  
   /* Gradient background, top (turquoise) to bottom (yellow) */
   background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
 }

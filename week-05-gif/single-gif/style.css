@@ -1,0 +1,16 @@
+/* CSS Document */
+
+body {
+  /* background uses a gradient from green to white */
+  background: linear-gradient(#00FF00, #ffffff);
+}
+
+#column {
+  float: left;   /* positions the column to the left side */
+  width: 200px;  /* sets a fixed width for the container */
+}
+
+img {
+  width: 200%;           /* scales the GIF to be twice the width of its container */
+  transform: rotate(0deg); /* transform property could rotate the image; here set to none */
+}

@@ -1,0 +1,36 @@
+/* CSS Document — Content Boxes with Flex Layout */
+
+body {
+  background: coral;
+  color: papayawhip;
+  font-family: sans-serif;
+}
+
+article {
+  width: 800px;        /* fix width of main content area */
+  margin: 0 auto;      /* center it in the page */
+}
+
+h1 {
+  font-size: 48pt;
+}
+
+.year {
+  display: flex;       /* arrange .info-box elements side by side */
+  margin: 50px 0;
+  border: 3px solid papayawhip;
+}
+
+.info-box {
+  flex-grow: 1;        /* each box grows to fill space equally */
+  flex-basis: auto;    /* base size depends on content or width */
+  background: papayawhip;
+  color: coral;
+  padding: 25px;
+  margin: 20px;
+}
+
+/* Adds variation: bigger boxes grow 4x faster than others */
+.bigger {
+  flex-grow: 4;
+}

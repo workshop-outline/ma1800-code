@@ -3,21 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Week 3 — Introduction to CSS</title>
-  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <p><a href="../">← MA1800 Coding Workshops</a></p>
+
   <h1>Week 3 — Introduction to CSS</h1>
-  <p>Use an external stylesheet to change how HTML elements look and behave.</p>
+
+  <p>
+    CSS (Cascading Style Sheets) is the language used to style HTML webpages.
+    HTML gives a page its structure and content (headings, paragraphs, images, links),
+    while CSS changes how that content looks (colours, fonts, spacing, layout).
+  </p>
+
+  <p>
+    With CSS you can:
+  </p>
+  <ul>
+    <li>Change text <b>colours</b>, <b>fonts</b>, and <b>sizes</b>.</li>
+    <li>Add <b>backgrounds</b>, <b>borders</b>, and <b>spacing</b> around elements.</li>
+    <li>Arrange elements on the page into different <b>layouts</b>.</li>
+    <li>Create <b>effects and animations</b> (for example, changing colour when you hover over a button).</li>
+  </ul>
+
+  <p>
+    The term <i>cascading</i> means that if more than one CSS rule applies to the same element,
+    the browser decides which one takes priority — usually the most specific rule,
+    or the last one written.
+  </p>
+
+  <p>
+    CSS is always placed inside the <code>&lt;head&gt;</code> of an HTML document, either as:
+  </p>
+  <ul>
+    <li>An external file (recommended), linked with:<br>
+      <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
+    <li>Or inside the page itself using <code>&lt;style&gt;</code> tags.</li>
+  </ul>
 
   <h2>Workshops</h2>
-  <ol class="workshop-list">
-    <li><a href="linking-css/">Linking CSS</a> — Connect an external stylesheet and change colours, fonts and text size.</li>
-<li><a href="div-containers/">Div Containers</a> — Group HTML elements and style the group as a block.</li>
-<li><a href="classes-ids/">Classes and IDs</a> — Apply reusable classes and a unique ID to selected elements.</li>
-<li><a href="hover-effects/">Hover Effects</a> — Use the CSS :hover state to reveal hidden text.</li>
-<li><a href="background-images/">Background Images</a> — Apply a local image as a repeating CSS background.</li>
+  <ol>
+    <li><a href="linking-css/">Workshop 1 — Linking CSS, Colours, and Fonts</a></li>
+    <li><a href="div/">Workshop 2 — Using Div</a></li>
+    <li><a href="classes-ids/">Workshop 3 — Classes and IDs</a></li>
+    <li><a href="hover/">Workshop 4 — Hover Effects</a></li>
+    <li><a href="background-image/">Workshop 5 — Background Image Repeat</a></li>
   </ol>
+
 </body>
 </html>

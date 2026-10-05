@@ -1,0 +1,26 @@
+/* CSS Document */
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 8rem;
+
+  /* Creates a linear-gradient background between red, orange, skyblue and blue */
+  background: linear-gradient(-45deg, red, orange, skyblue, blue);
+
+  /* Makes the background 4 times the size of the body */
+  background-size: 400% 400%;
+
+  /* Applies the gradient animation */
+  animation: gradient 1s ease infinite;
+}
+
+/* 
+   The keyframes move the background position around the body 
+   to give the impression of shifting colour tones.
+*/
+@keyframes gradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

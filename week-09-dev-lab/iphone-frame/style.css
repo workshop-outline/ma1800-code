@@ -1,0 +1,27 @@
+/* CSS Document */
+/* Styling rules for Exercise 3: embedding text inside an iPhone frame */
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  /* Dimensions match the background iPhone image */
+  width: 340px;
+  height: 580px;
+  background: url("assets/iphone.png") no-repeat center;
+  margin: 50px auto; /* center the phone on the page */
+}
+
+#iphone {
+  /* This inner container represents the phone screen */
+  background: lightgray;
+  width: 231px;
+  height: 411px;
+  position: relative;
+  left: 50px;  /* aligns the screen with the phone frame */
+  top: 79px;
+  overflow: auto; /* enables scrolling for long content */
+  border-radius: 3px; /* slightly rounded edges to fit the screen */
+  padding: 3px;       /* small padding for text readability */
+}

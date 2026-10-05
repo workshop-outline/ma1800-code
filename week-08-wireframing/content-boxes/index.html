@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive scaling -->
+  <title>Exercise 2 — Content Boxes</title>
+  <link rel="stylesheet" href="style.css"> <!-- external stylesheet -->
+</head>  
+
+<body>
+  <article>
+    <h1>Header</h1>
+
+    <!-- 
+      Exercise summary:
+      This exercise shows how to group content into repeating sections.
+      The .info-box class provides a shared style for each box, while
+      the .bigger class introduces variation. This demonstrates how
+      reusable classes create hierarchy and structure in a layout.
+    -->
+
+    <!-- Each "year" section groups info-boxes together -->
+    <section class="year">
+      <div class="info-box bigger">Hello World</div>
+      <div class="info-box">Hello World</div>
+    </section>
+    
+    <section class="year">
+      <div class="info-box">Hello World</div>
+      <div class="info-box bigger">Hello World</div>
+    </section>
+    
+    <section class="year">
+      <div class="info-box bigger">Hello World</div>
+      <div class="info-box">Hello World</div>
+    </section>
+  </article>
+</body>
+</html>

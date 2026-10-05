@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 1 — Image Hover Effect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 
+    Exercise summary:
+    This exercise introduces hover effects in CSS. 
+    You’ll stack two images in the same container and use the :hover state 
+    to fade the top image in and out, creating an interactive visual effect.
+  -->
+
+  <div id="content">
+
+    <p>Two images</p>
+
+    <p>
+      <img src="assets/gradient-2.png"
+           width="250" alt="Gradient style image one">
+
+      <!-- The second image will be styled with CSS to show only on hover -->
+      <img src="assets/gradient-1.png"
+           width="250" alt="Gradient style image two">
+    </p>
+
+    <p>Hover mouse over the image to fade in another image on top!</p>
+
+    <!-- Image container holds both images stacked in the same position -->
+    <div class="image-container">
+      <img src="assets/gradient-2.png"
+           alt="Gradient background image">
+      <img class="hidden" src="assets/gradient-1.png"
+           alt="Gradient hover image">
+    </div>
+
+  </div>
+</body>
+</html>

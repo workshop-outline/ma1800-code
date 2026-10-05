@@ -1,0 +1,74 @@
+/* CSS Document */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 300px;
+  height: 300px;
+  border: dashed 3px #000000; /* container frame */
+}
+
+p {
+  font-size: 14rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+   Keyframes for moving text around the four corners of the container 
+*/
+@keyframes move {
+  0%   { top: 0%;   left: 0%; }
+  25%  { top: 100%; left: 100%; }
+  50%  { top: 0%;   left: 100%; }
+  100% { top: 100%; left: 0%; }
+}
+
+.moving {
+  position: relative; /* required for top/left animation to work */
+  color: #ff0000;
+  text-align: left;
+  border: dashed 3px #ff0000;
+
+  animation: move 10s ease infinite alternate-reverse;
+}
+
+/* 
+   Keyframes for image element — moving it across and outside the container 
+   for a more dramatic motion path 
+*/
+@keyframes image {
+  0%   { top: 60%;   left: 60%; }
+  25%  { top: -100%; left: -100%; }
+  50%  { top: 250%;  left: 250%; }
+  100% { top: -100%; left: 60%; }
+}
+
+.image-animation {
+  position: relative;
+  border: dashed 3px #ff0000;
+
+  animation: image 10s ease infinite alternate-reverse;
+}
+
+/* 
+   Keyframes for frog image — quicker and more erratic motion path 
+*/
+@keyframes frogs {
+  0%   { top: 160%;  left: -60%; }
+  25%  { top: -200%; left: 100%; }
+  50%  { top: -250%; left: 750%; }
+  100% { top: -10%;  left: 190%; }
+}
+
+.frogs-animation {
+  position: relative;
+  border: dashed 3px #ff0000;
+
+  animation: frogs 2s ease infinite alternate-reverse;
+}

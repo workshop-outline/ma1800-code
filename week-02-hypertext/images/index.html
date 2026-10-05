@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Images</title>
+
+  <title>Exercise 4 (W2) — Images</title>
 </head>
 <body>
-  <h1>Images in HTML</h1>
 
-  <h2>Image from a URL</h2>
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"
-    alt="A tabby cat"
-    width="300">
+  <h1>Loading an image from a URL</h1>
+  <!-- The src below points to the full web address of an image -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" 
+       alt="A tabby cat" width="300">
 
-  <h2>Image from this project</h2>
+  <h1>Loading an image from your computer</h1>
   <p>
-    The file below is stored inside the <code>assets</code> folder.
-    The path in <code>src</code> tells the browser where to find it.
+    The image below is loaded from the local <code>assets</code> folder.
   </p>
+  <!-- Local image stored inside the assets folder -->
+  <img src="assets/example-image.jpg" alt="My local image" width="300">
 
-  <img src="assets/example-image.jpg" alt="Colour gradient example" width="300">
 </body>
 </html>
