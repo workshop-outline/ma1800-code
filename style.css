@@ -1,0 +1,22 @@
+/* Shared style for the MA1800 index pages */
+
+
+body {
+    font-family: sans-serif;
+    background: #fdfcf7;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    color: #cc5500;
+}
+
+a {
+    color: #cc5500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
