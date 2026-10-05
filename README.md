@@ -6,7 +6,7 @@ The workshops focus on HTML and CSS for creative and web-based artistic practice
 Use the link below to access the live versions of the completed weekly coding workshops:
 
 **GitHub Pages:**  
-[Add link here]
+https://workshop-outline.github.io/ma1800-code/
 
 ## Structure
 
