@@ -1,0 +1,47 @@
+/* CSS Document — Exercise 4: Image Posts with Captions */
+
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+
+
+body {
+  background: darkblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: white;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+#column {
+  margin: 0 auto;    /* centers the column horizontally */
+  width: 500px;      /* fixed column width for all posts */
+}
+
+.post {
+  background: white;
+  margin-bottom: 25px; /* spacing between posts */
+}
+
+img {
+  display: block;     /* removes unwanted gaps under images */
+  width: 80%;        /* makes sure images scale to fit the post width */
+  padding: 50px;
+  padding-bottom: 0;
+}
+
+p {
+  padding: 50px;
+}
+
+.caption {
+  padding-top: 15px;  /* separate caption from image */
+  font-style: italic;
+  color: #333;
+}

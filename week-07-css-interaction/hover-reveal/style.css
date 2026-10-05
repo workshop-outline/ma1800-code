@@ -1,0 +1,51 @@
+/* CSS Document — Exercise 1: Image Hover Effect */
+
+body {
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+#content {
+  width: 600px;
+  margin: 0 auto; /* centers content */
+}
+
+.image-container {
+  width: 300px;          /* set size of the image container */
+  position: relative;    /* allows absolute positioning of stacked images */
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;           /* scale image to container width */
+}
+
+.hidden {
+  position: absolute;    /* places hidden image on top of the base image */
+  top: 0;
+  left: 0;
+  opacity: 0;            /* start fully transparent */
+  z-index: 9;            /* ensure it sits above the background image */
+  cursor: pointer;
+}
+
+/* Fade in when hovered */
+.hidden:hover {
+  animation: fadein 1s linear forwards;
+}
+
+/* Fade out when not hovered */
+.hidden:not(:hover) {
+  animation: fadeout 2s linear forwards;
+}
+
+/* Keyframe animations */
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}

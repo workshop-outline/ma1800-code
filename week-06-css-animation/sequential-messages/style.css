@@ -1,0 +1,36 @@
+/* CSS Document */
+
+@keyframes flash {
+  /* text alternates between white and black */
+  0%   { color: #fff; }
+  50%  { color: #000; }
+  100% { color: #fff; }
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 25px;
+  color: #fff;
+
+  /* base animation applied to all h1 elements */
+  animation: flash 2s normal 10;
+  /* shorthand for:
+     animation-name: flash;
+     animation-duration: 2s;
+     animation-direction: normal;
+     animation-iteration-count: 10;
+  */
+}
+
+/* Each message starts at a different time using animation-delay */
+.message1 {
+  animation-delay: 0s;
+}
+
+.message2 {
+  animation-delay: 2s;
+}
+
+.message3 {
+  animation-delay: 4s;
+}

@@ -1,0 +1,45 @@
+/* CSS Document */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 300px;
+  height: 300px;
+  border: dashed 3px #000000; /* container to show the animation area */
+}
+
+p {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes move {
+  /* moves the text around the four corners of the container */
+  0%   { top: 0%;   left: 0%; }
+  25%  { top: 100%; left: 100%; }
+  50%  { top: 0%;   left: 100%; }
+  100% { top: 100%; left: 0%; }
+}
+
+.moving {
+  position: relative; /* allows top/left offsets to animate */
+  color: #ff0000;
+  text-align: left;
+  border: dashed 3px #ff0000;
+
+  /* apply the move animation */
+  animation: move 10s ease infinite alternate-reverse;
+  /* shorthand for:
+     animation-name: move;
+     animation-duration: 10s;
+     animation-timing-function: ease;
+     animation-iteration-count: infinite;
+     animation-direction: alternate-reverse;
+  */
+}

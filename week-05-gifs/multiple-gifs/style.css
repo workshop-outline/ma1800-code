@@ -1,0 +1,16 @@
+/* CSS Document */
+
+body {
+  /* background gradient: blue to light gray */
+  background: linear-gradient(#1E90FF, #f0f0f0);
+}
+
+#column {
+  float: left;   /* places the container on the left side */
+  width: 200px;  /* fixed width for the column */
+}
+
+img {
+  width: 200%;             /* each GIF is scaled to twice the container width */
+  transform: rotate(90deg); /* rotates the GIF clockwise by 90 degrees */
+}

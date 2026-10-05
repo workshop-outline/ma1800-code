@@ -1,0 +1,30 @@
+/* CSS Document */
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 4rem; /* large heading for visibility */
+}
+
+@keyframes colourCycle {
+  /* cycles text colour through red → yellow → blue → green */
+  0%   { color: red; }
+  25%  { color: yellow; }
+  50%  { color: blue; }
+  100% { color: green; }
+}
+
+.colourCycling {
+  padding: 50px;
+
+  /* animation shorthand */
+  animation: colourCycle 2s alternate-reverse infinite;
+  /* shorthand expands to:
+     animation-name: colourCycle;
+     animation-duration: 2s;
+     animation-direction: alternate-reverse;
+     animation-iteration-count: infinite;
+  */
+}

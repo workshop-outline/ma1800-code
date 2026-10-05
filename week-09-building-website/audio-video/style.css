@@ -1,0 +1,16 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  margin: 40px 0;
+}
+
+audio,
+video {
+  display: block;
+  max-width: 100%;
+}
